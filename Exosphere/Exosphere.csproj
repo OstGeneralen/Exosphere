@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34BA1780-097E-4B56-8377-B0AA9406A082}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exosphere</RootNamespace>
+    <AssemblyName>Exosphere</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>WindowsGL</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsGL\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsGL\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Basebuilding\Colony.cs" />
+    <Compile Include="Basebuilding\Facilities\ComArray.cs" />
+    <Compile Include="Basebuilding\Facilities\EquipmentStores.cs" />
+    <Compile Include="Basebuilding\Facilities\Evaluation.cs" />
+    <Compile Include="Basebuilding\Facilities\FoodStores.cs" />
+    <Compile Include="Basebuilding\Facilities\Garage.cs" />
+    <Compile Include="Basebuilding\Facilities\Greenhouse.cs" />
+    <Compile Include="Basebuilding\Facilities\Gym.cs" />
+    <Compile Include="Basebuilding\Facilities\Hangar.cs" />
+    <Compile Include="Basebuilding\Facilities\Lab.cs" />
+    <Compile Include="Basebuilding\Facilities\Library.cs" />
+    <Compile Include="Basebuilding\Facilities\LivingQuarters.cs" />
+    <Compile Include="Basebuilding\Facilities\MedBay.cs" />
+    <Compile Include="Basebuilding\Facilities\Mine.cs" />
+    <Compile Include="Basebuilding\Facilities\MineralStores.cs" />
+    <Compile Include="Basebuilding\Facilities\Pump.cs" />
+    <Compile Include="Basebuilding\Facilities\Refinery.cs" />
+    <Compile Include="Basebuilding\Facilities\SolarPanels.cs" />
+    <Compile Include="Basebuilding\Facilities\Workshop.cs" />
+    <Compile Include="Basebuilding\Facility.cs" />
+    <Compile Include="Basebuilding\FacilityTaskScreen.cs" />
+    <Compile Include="Basebuilding\Grid.cs" />
+    <Compile Include="BaseObject.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Cursor.cs" />
+    <Compile Include="Exploring\ExplorationScreen.cs" />
+    <Compile Include="Exploring\Explorer.cs" />
+    <Compile Include="Exploring\Waypoint.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Generators\Biome.cs" />
+    <Compile Include="Generators\Colonist.cs" />
+    <Compile Include="Generators\Disease.cs" />
+    <Compile Include="Generators\Galaxy.cs" />
+    <Compile Include="Generators\Planet.cs" />
+    <Compile Include="Generators\Resource.cs" />
+    <Compile Include="Handlers\DistanceHandler.cs" />
+    <Compile Include="Handlers\InputHandler.cs" />
+    <Compile Include="Handlers\KeyboardHandler.cs" />
+    <Compile Include="Handlers\MouseHandler.cs" />
+    <Compile Include="Handlers\TimeHandler.cs" />
+    <Compile Include="HUD\ColonistChoice.cs" />
+    <Compile Include="HUD\FacilityChoice.cs" />
+    <Compile Include="HUD\HUD.cs" />
+    <Compile Include="HUD\MessageBox.cs" />
+    <Compile Include="HUD\PossibleMiningPoint.cs" />
+    <Compile Include="HUD\ScrollBox.cs" />
+    <Compile Include="HUD\WorkersButton.cs" />
+    <Compile Include="Items\Components\Probe.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\NullItem.cs" />
+    <Compile Include="Items\Vehicle.cs" />
+    <Compile Include="Items\Vehicles\BasicVehicle.cs" />
+    <Compile Include="Items\Vehicles\VehicleC60.cs" />
+    <Compile Include="Items\Vehicles\VehicleG60.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResearchProject\BasicResearch.cs" />
+    <Compile Include="ResearchProject\Buff.cs" />
+    <Compile Include="ResearchProject\Buffs\HigherEnergyOutput.cs" />
+    <Compile Include="ResearchProject\Buffs\LargerEquipmentStorage.cs" />
+    <Compile Include="ResearchProject\Buffs\LargerFoodStorage.cs" />
+    <Compile Include="ResearchProject\Buffs\LargerMineralStorage.cs" />
+    <Compile Include="ResearchProject\Buffs\LessConstructionCost.cs" />
+    <Compile Include="ResearchProject\Buffs\LessEnergyConsumption.cs" />
+    <Compile Include="ResearchProject\Buffs\LessFoodConsumption.cs" />
+    <Compile Include="ResearchProject\Buffs\LessMaintenanceCost.cs" />
+    <Compile Include="ResearchProject\Buffs\LessWaterConsumption.cs" />
+    <Compile Include="ResearchProject\Buffs\MoreEfficientExtraction.cs" />
+    <Compile Include="ResearchProject\Buffs\MoreEfficientIntelligenceTraining.cs" />
+    <Compile Include="ResearchProject\Buffs\MoreEfficientResearch.cs" />
+    <Compile Include="ResearchProject\Buffs\MoreEfficientStrengthTraining.cs" />
+    <Compile Include="ResearchProject\Buffs\QuickerAssembling.cs" />
+    <Compile Include="ResearchProject\Buffs\ReducedAssemblingCost.cs" />
+    <Compile Include="ResearchProject\Diseases.cs" />
+    <Compile Include="ResearchProject\Equipment.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\ComArrayResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\EquipmentStoreResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\EvaluationFacilityResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\FoodStoreResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\GarageResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\GreenhouseResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\GymResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\HangarResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\LabResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\LibraryResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\LivingQuartersResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\MedBayResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\MineralStoreResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\MineResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\RefineryResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\SolarPanelsResearch.cs" />
+    <Compile Include="ResearchProject\FacilitiesResearch\WorkshopResearch.cs" />
+    <Compile Include="ResearchProject\FacilityResearch.cs" />
+    <Compile Include="ResearchProject\ItemResearch.cs" />
+    <Compile Include="ResearchProject\Item_Research\VehicleResearch.cs" />
+    <Compile Include="ResearchProject\Item_Research\Vehicle_Research\VehicleC60Research.cs" />
+    <Compile Include="ResearchProject\Minerals.cs" />
+    <Compile Include="ResearchProject\Research.cs" />
+    <Compile Include="ResearchProject\Vaccine.cs" />
+    <Compile Include="Resources\EnergyManager.cs" />
+    <Compile Include="Resources\ResourceManager.cs" />
+    <Compile Include="SaveGame.cs" />
+    <Compile Include="Screens\BaseScreen.cs" />
+    <Compile Include="Screens\ColonyScreen.cs" />
+    <Compile Include="Screens\FacilityScreen.cs" />
+    <Compile Include="Screens\GalaxyScreen.cs" />
+    <Compile Include="Screens\PlanetScreen.cs" />
+    <Compile Include="Screens\Screen.cs" />
+    <Compile Include="SerializableDictionary.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Transferring\Transmission.cs" />
+    <Compile Include="Transferring\TransmissionShip.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup />
+  <!-- Specify the search path explicitly so the ResolveAssemblyReferences task picks the right ones -->
+  <Target Name="BeforeResolveReferences">
+    <CreateProperty Value="$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows;$(AssemblySearchPaths)">
+      <Output TaskParameter="Value" PropertyName="AssemblySearchPaths" />
+    </CreateProperty>
+  </Target>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
